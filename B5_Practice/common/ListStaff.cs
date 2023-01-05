@@ -24,7 +24,7 @@ namespace B5_Practice.common
         }
         #endregion
 
-        public void InputListStaff()
+        public void InputData()
         {
             //Enter number of staff
             while (true)
@@ -46,7 +46,7 @@ namespace B5_Practice.common
             }
         }
 
-        public void OutputListStaff()
+        public void OutputData()
         {
             for (int i = 0; i < this.amount; i++)
             {

@@ -7,8 +7,8 @@ namespace B5_Practice
         static void Main(string[] args)
         {
             ListStaff list1 = new ListStaff();
-            list1.InputListStaff();
-            list1.OutputListStaff();
+            list1.InputData();
+            list1.OutputData();
         }
     }
 }
