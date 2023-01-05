@@ -54,5 +54,34 @@ namespace B5_Practice.common
                 this.listStaff[i].OutputData();
             }
         }
+
+        public Staff TheOldestStaff()
+        {
+            Staff Oldest = listStaff[0];
+            for(int i = 1; i < this.amount; i++)
+            {
+                if (Oldest.DateOfBirth > this.listStaff[i].DateOfBirth)
+                {
+                    Oldest = this.listStaff[i];
+                }
+            }
+            return Oldest;
+        }
+
+        public void FindByName(string name)
+        {
+            int index = -1;
+            foreach(Staff nv in this.listStaff)
+            {
+                if (nv.Name == name)
+                {
+                    nv.OutputData();
+                    index++;
+                }
+            }
+
+            if (index < 0)
+                Console.WriteLine("Dont exsit staff '" + name + "'!");
+        }
     }
 }

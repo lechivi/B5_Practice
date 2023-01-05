@@ -9,6 +9,8 @@ namespace B5_Practice
             ListStaff list1 = new ListStaff();
             list1.InputData();
             list1.OutputData();
+            list1.FindByName("x");
+
         }
     }
 }
